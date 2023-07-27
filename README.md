@@ -2,7 +2,7 @@
 
 An e-commerce website created for schoolwork. The website is built by using vanilla JavaScript, HTML, CSS and fetch API. The website features database integration, RESTful API integration, and basic authentication.
 
-For demonstration of wireframing and Figma prototyping, drawings can be found in [this Google Docs file](https://docs.google.com/document/d/e/2PACX-1vSYzZD_uASKbKKmuOrPQBfxw_pfwT8zZmTSL7K1DPHrSFyESnXmLQ-rxYaHdjzbYEOsJxOisUAY7gZa/pub).
+For demonstration purposes, screenshots of wireframing and Figma prototyping can be found in [this Google Docs file](https://docs.google.com/document/d/e/2PACX-1vSYzZD_uASKbKKmuOrPQBfxw_pfwT8zZmTSL7K1DPHrSFyESnXmLQ-rxYaHdjzbYEOsJxOisUAY7gZa/pub).
 
 ## 1. Usage
 
@@ -43,4 +43,4 @@ Navigate to [`http://localhost:3000`](http://localhost:3000) in the browser to o
 
 ## 2. Wireframing and Prototyping
 
-Check out this [Google Docs](https://docs.google.com/document/d/e/2PACX-1vSYzZD_uASKbKKmuOrPQBfxw_pfwT8zZmTSL7K1DPHrSFyESnXmLQ-rxYaHdjzbYEOsJxOisUAY7gZa/pub) for screenshots of wireframe and prototype drawings this project, which are created for before the code implementation.
+This [Google Docs](https://docs.google.com/document/d/e/2PACX-1vSYzZD_uASKbKKmuOrPQBfxw_pfwT8zZmTSL7K1DPHrSFyESnXmLQ-rxYaHdjzbYEOsJxOisUAY7gZa/pub) contains screenshots of wireframe and prototype drawings for this project, which are created for before the code implementation.
