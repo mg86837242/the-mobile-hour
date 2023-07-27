@@ -160,7 +160,7 @@ app.use((request, response, next) => {
 });
 
 // Serve static assets (HTML, CSS, JS, images, etc.) & views
-app.use(express.static('src/static'));
+// app.use(express.static('src/static'));
 app.use(express.static('src/views'));
 
 // Mount routers with API endpoints at `/api/(.*)s` paths
@@ -177,5 +177,6 @@ app.use('/api/customers', customersController);
 
 // Start backend (i,e. start listening for requests)
 app.listen(port, () => {
-  console.log('Backend started on port: ' + port);
+  console.info(`✅ Express server running on port: ${port}
+  -- mode: ${process.env.NODE_ENV}`);
 });
