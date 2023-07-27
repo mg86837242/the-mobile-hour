@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create User</title>
+    <script src="create_user.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  </head>
+
+  <body>
+    <nav id="header-component"></nav>
+    <main>
+      <div class="central-panel-2">
+        <div class="central-panel-2-content">
+          <form id="create-user-form">
+            <label for="user-firstname">First Name (required):</label>
+            <input
+              type="text"
+              id="user-firstname"
+              name="firstname"
+              pattern="^([A-Z][a-z]+([ ]?[a-z]?['-]?[A-Z][a-z]+)*)$"
+              required
+            />
+            <label for="user-lastname">Last Name (required):</label>
+            <input
+              type="text"
+              id="user-lastname"
+              name="lastname"
+              pattern="^([A-Z][a-z]+([ ]?[a-z]?['-]?[A-Z][a-z]+)*)$"
+              required
+            />
+            <label for="user-role">Role (required):</label>
+            <select id="user-role" name="role" required>
+              <option value="Admin">Admin</option>
+              <option value="Staff">Staff</option>
+            </select>
+            <label for="user-username">Username (required):</label>
+            <input type="text" id="user-username" name="username" />
+            <label for="user-password">Password (required):</label>
+            <input type="password" id="user-password" name="password" />
+            <input type="submit" value="Create User" class="button-dark" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer id="footer-component-min"></footer>
+  </body>
+</html>

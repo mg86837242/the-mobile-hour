@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Feature</title>
+    <script src="edit_feature.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  </head>
+
+  <body>
+    <nav id="header-component"></nav>
+    <main>
+      <div class="central-panel-2">
+        <div class="central-panel-2-content">
+          <form id="edit-feature-form">
+            <label for="feature-id">Feature ID (read only):</label>
+            <input type="text" id="feature-id" name="feature_id" readonly />
+            <label for="feature-weight">Weight (required):</label>
+            <input type="text" id="feature-weight" name="weight" pattern="\d+\s[g]" required />
+            <label for="feature-dimensions">Dimensions (required):</label>
+            <input type="text" id="feature-dimensions" name="dimensions" required />
+            <label for="feature-screensize">Screensize (required):</label>
+            <input type="text" id="feature-screensize" name="screensize" required />
+            <label for="feature-resolution">Resolution (required):</label>
+            <input type="text" id="feature-resolution" name="resolution" required />
+            <label for="feature-CPU">CPU (required):</label>
+            <input type="text" id="feature-CPU" name="CPU" required />
+            <label for="feature-RAM">RAM (required):</label>
+            <input type="text" id="feature-RAM" name="RAM" pattern="\d+\s*(?:GB)" required />
+            <label for="feature-storage">Storage (required):</label>
+            <input type="text" id="feature-storage" name="storage" pattern="\d+\s*(?:GB)" required />
+            <label for="feature-battery">Battery (required):</label>
+            <input type="text" id="feature-battery" name="battery" pattern="\d+\s[mAh]" required />
+            <label for="feature-rear-camera">Rear Camera (required):</label>
+            <input type="text" id="feature-rear-camera" name="rear_camera" required />
+            <label for="feature-front-camera">Front Camera (required):</label>
+            <input type="text" id="feature-front-camera" name="front_camera" required />
+            <input type="submit" value="Update Feature" class="button-dark" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer id="footer-component-min"></footer>
+  </body>
+</html>

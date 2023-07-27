@@ -1,0 +1,26 @@
+{
+  "name": "javascript_project_structure",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon -r dotenv/config",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier . --write"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mysql2": "^3.5.2",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "prettier": "3.0.0"
+  }
+}

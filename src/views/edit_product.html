@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Product</title>
+    <script src="edit_product.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  </head>
+
+  <body>
+    <nav id="header-component"></nav>
+    <main>
+      <div class="central-panel-2">
+        <div class="central-panel-2-content">
+          <form id="edit-product-form">
+            <label for="product-id">Product ID (read only):</label>
+            <input type="text" id="product-id" name="product_id" readonly />
+            <label for="product-name">Product Name (required):</label>
+            <input type="text" id="product-name" name="product_name" />
+            <label for="product-model">Product Model (required):</label>
+            <input type="text" id="product-model" name="product_model" />
+            <!-- there are manufacturers called "i-mate", "O2 UK" -->
+            <label for="product-manufacturer">Manufacturer (required):</label>
+            <input type="text" id="product-manufacturer" name="manufacturer" />
+            <label for="product-price">Price (required):</label>
+            <input type="number" id="product-price" name="price" />
+            <label for="product-stock-on-hand">Stock on Hand (required):</label>
+            <input type="number" id="product-stock-on-hand" name="stock_on_hand" />
+            <label for="feature-list">Feature (required):</label>
+            <select name="feature_id" id="feature-list"></select>
+            <input type="submit" value="Update Product" class="button-dark" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer id="footer-component-min"></footer>
+  </body>
+</html>

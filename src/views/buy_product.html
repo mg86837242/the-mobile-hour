@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Product</title>
+    <script src="buy_product.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  </head>
+
+  <body>
+    <main>
+      <nav id="header-component"></nav>
+      <div class="checkout">
+        <div class="checkout-content containers">
+          <div class="checkout-product-details">
+            <h2>Checkout Page</h2>
+            <h3>Product Details</h3>
+            <div id="product-details"></div>
+          </div>
+          <div class="checkout-customer-details">
+            <form class="checkout-customer-details-form">
+              <h3>1. Customer Details</h3>
+              <label for="customer-firstname">First Name&ast;:</label>
+              <input
+                type="text"
+                id="customer-firstname"
+                name="firstname"
+                pattern="^([A-Z][a-z]+([ ]?[a-z]?['-]?[A-Z][a-z]+)*)$"
+                required
+              />
+              <label for="customer-lastname">Last Name&ast;:</label>
+              <input
+                type="text"
+                id="customer-lastname"
+                name="lastname"
+                pattern="^([A-Z][a-z]+([ ]?[a-z]?['-]?[A-Z][a-z]+)*)$"
+                required
+              />
+              <label for="customer-phone">Phone&ast;:</label>
+              <input type="tel" id="customer-phone" name="phone" required />
+              <label for="customer-email">Email&ast;:</label>
+              <input type="email" id="customer-email" name="email" required />
+              <h3>2. Delivery Details</h3>
+              <label for="customer-street">Street Address&ast;:</label>
+              <input type="text" id="customer-street" name="street" required />
+              <!-- according to Wiki, international postal codes might contain letter, number and hyphen -->
+              <label for="customer-postcode">Postcode&ast;:</label>
+              <input type="text" id="customer-postcode" name="postcode" required />
+              <label for="customer-city">City&ast;:</label>
+              <input type="text" id="customer-city" name="city" pattern="[a-zA-Z]{2,}" required />
+              <label for="customer-state">State&ast;:</label>
+              <input type="text" id="customer-state" name="state" pattern="[a-zA-Z]{2,}" required />
+              <input type="submit" value="Complete Order" class="button-dark" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer id="footer-component-min"></footer>
+    </main>
+  </body>
+</html>
