@@ -1,10 +1,10 @@
 # The Mobile Hour
 
-A very basic e-commerce website created for schoolwork. The website is built by using vanilla JavaScript, HTML, CSS and fetch API. The website features database integration, RESTful API integration, and basic authentication.
-
-For demonstration purposes, screenshots of wireframing and Figma prototyping can be found in [this Google Docs file](https://docs.google.com/document/d/e/2PACX-1vSYzZD_uASKbKKmuOrPQBfxw_pfwT8zZmTSL7K1DPHrSFyESnXmLQ-rxYaHdjzbYEOsJxOisUAY7gZa/pub).
+A very basic e-commerce website created for schoolwork. The website is built by using vanilla JavaScript, HTML and CSS, with the help of Node and Express. The website features database integration, RESTful API integration, and basic backend authentication.
 
 For deployed version of this webite, check the [deployment section](#3-deployment).
+
+For demonstration purposes, screenshots of wireframing and Figma prototyping can be found in [this Google Docs file](https://docs.google.com/document/d/e/2PACX-1vSYzZD_uASKbKKmuOrPQBfxw_pfwT8zZmTSL7K1DPHrSFyESnXmLQ-rxYaHdjzbYEOsJxOisUAY7gZa/pub).
 
 ## 1. Usage
 
@@ -43,11 +43,7 @@ npm start
 
 Navigate to [`http://localhost:3000`](http://localhost:3000) in the browser to open the web app.
 
-## 2. Wireframing and Prototyping
-
-[This Google Docs](https://docs.google.com/document/d/e/2PACX-1vSYzZD_uASKbKKmuOrPQBfxw_pfwT8zZmTSL7K1DPHrSFyESnXmLQ-rxYaHdjzbYEOsJxOisUAY7gZa/pub) contains screenshots of wireframe and prototype drawings for this project, which are created for before the code implementation.
-
-## 3. Deployment
+## 2. Deployment
 
 For deployed version of this web app, visit: https://themobilehourdemo.space/
 
@@ -59,3 +55,11 @@ Technologies used for deployment includes but not limited to:
 - Node
 - Nginx – web server and reverse proxy
 - PM2 – backend process management
+
+## 3. Wireframing and Prototyping
+
+[This Google Docs](https://docs.google.com/document/d/e/2PACX-1vSYzZD_uASKbKKmuOrPQBfxw_pfwT8zZmTSL7K1DPHrSFyESnXmLQ-rxYaHdjzbYEOsJxOisUAY7gZa/pub) contains screenshots of wireframe and prototype drawings for this project, which are created for before the code implementation.
+
+## 4. Credit
+
+- <a href="https://www.flaticon.com/free-icons/cellphone" title="cellphone icons">Cellphone icons created by Chanut - Flaticon</a>
