@@ -11,15 +11,19 @@ app.use(express.json());
 // persistent between requests, making our API stateful and overcoming
 // the stateless nature of HTTP.
 const sess = {
+  name: 'theMobileHourSession',
   secret: process.env.SESSION_SECRET || 'secret phrase',
   resave: false,
   saveUninitialized: false,
-  cookie: { secure: false }, // should be true once deployed online under HTTPS.
+  cookie: {
+    httpOnly: true,
+    maxAge: 7 * 24 * 60 * 60 * 1_000,
+  },
 };
 
 if (app.get('env') === 'production') {
-  app.set('trust proxy', 1); // trust first proxy
-  sess.cookie.secure = true; // serve secure cookies
+  app.set('trust proxy', '127.0.0.1');
+  sess.cookie.secure = true;
 }
 
 app.use(session(sess));
@@ -180,3 +184,16 @@ app.listen(port, () => {
   console.info(`✅ Express server running on port: ${port}
   -- mode: ${process.env.NODE_ENV}`);
 });
+
+// References for configuring `express-session` in prod env:
+// -- https://github.com/expressjs/session: official `express-session` docs, incl. options:
+// ---- Note if you have multiple apps running on the same hostname (this is just the name, i.e. localhost or 127.0.0.
+// ---- 1; different schemes and ports do not name a different hostname), then you need to separate the session cookies
+// ---- from each other. The simplest method is to simply set different names per app.
+// -- https://expressjs.com/en/advanced/best-practice-security.html: official recommended session configs for prod env
+// -- https://stackoverflow.com/questions/56726972/express-session-the-difference-between-session-id-and-connect-sid:
+//  clarification about `name` option
+// -- https://gist.github.com/nikmartin/5902176: secure sessions with Node.js, Express.js, and NginX as an SSL proxy
+//  spec. for this line `app.enable('trust proxy')`, however, there's a better solution
+// -- https://expressjs.com/en/guide/behind-proxies.html: official guide for `trust proxy` setting
+// ---- https://stackoverflow.com/questions/23413401: example of `trust proxy` setting with IP Addresses type
